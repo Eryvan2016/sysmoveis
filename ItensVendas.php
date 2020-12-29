@@ -8,6 +8,11 @@ class ItensVendas {
     private $idCliente;
     private $idVenda;
     private $idEstoque;
+    private $idProduto;
+    function getIdProduto() {
+        return $this->idProduto;
+    }
+    
     function getId() {
         return $this->id;
     }
@@ -63,6 +68,9 @@ class ItensVendas {
     function setIdEstoque($idEstoque): void {
         $this->idEstoque = $idEstoque;
     }
-
+    
+      function setIdProduto($idProduto): void {
+        $this->idProduto = $idProduto;
+    }
 
 }
