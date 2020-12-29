@@ -5,8 +5,9 @@ class Venda {
     private $data;
     private $hora;
     private $ValorTotal;
-    private $idProduto;
-            function getId() {
+    
+    
+    function getId() {
         return $this->id;
     }
 
@@ -22,10 +23,6 @@ class Venda {
         return $this->ValorTotal;
     }
     
-    function getIdProduto() {
-        return $this->idProduto;
-    }
-
     function setId($id): void {
         $this->id = $id;
     }
@@ -42,11 +39,5 @@ class Venda {
         $this->ValorTotal = $ValorTotal;
     }
     
-
-    function setIdProduto($idProduto): void {
-        $this->idProduto = $idProduto;
-    }
-
-
 
 }
