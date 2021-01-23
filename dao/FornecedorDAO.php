@@ -1,8 +1,8 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/sysmoveis/vo/Produto.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/sysmoveis/vo/fornecedor.php";
 
-class ProdutoDAO {
+class FornecedorDAO {
 
     function salvar($obj) {
         require $_SERVER['DOCUMENT_ROOT'] . "/sysmoveis/bd/Conexao.php";
