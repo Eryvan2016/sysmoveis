@@ -10,8 +10,17 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        o documento root é:
         <?php
-       
+        require $_SERVER['DOCUMENT_ROOT']."/sysconst/vo/Usuario.php";
+        require $_SERVER['DOCUMENT_ROOT']."/sysconst/dao/UsuarioDAO.php";
+        $usuario = new Usuario();
+        $usuario->setNome("Joaozinho");
+        $usuario->setLogin("Jojo");
+        $usuario->setSenha("afogadinhos");
+        $usuario->setEmail("jojo@gmail.com");
+        $dao = new UsuarioDAO();
+        $dao->salvar($usuario);
         ?>
     </body>
 </html>
